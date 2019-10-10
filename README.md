@@ -28,10 +28,10 @@ You will take on 2 Personas during the workshop. The **Data Scientist Persona** 
 
 - Soon after requesting your trial you will receive the following email. You may begin working on this lab once you receive this email.
 
-[INSERT SCREENSHOT HERE- REFER TO PAST WORKSHOP FOR DETAILS ON HOW]
+[***INSERT SCREENSHOT HERE- REFER TO PAST WORKSHOP FOR DETAILS ON HOW***]
 
 ### Step 2: Navigate to Lab 100
 
 - You can see a list of Lab Guides by clicking on the Menu Icon in the upper left corner of the browser window. You're now ready to continue with Lab 100.
 
-[INSERT SCREENSHOT HERE- REFER TO PAST WORKSHOP FOR DETAILS ON HOW]
+[***INSERT SCREENSHOT HERE- REFER TO PAST WORKSHOP FOR DETAILS ON HOW***]
