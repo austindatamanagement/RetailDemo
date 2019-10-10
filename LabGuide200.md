@@ -1,18 +1,19 @@
-# Lab 200 - Creating an Oracle Machine Learning (OML) User, Running an OML Script, and Data Preparation Using SQL Developer
+# Lab 200 - Creating an Oracle Machine Learning (OML) User, Granting User Privileges Using SQL Developer, and Use OML to Run a SQL Script to Generate Prediction Models
 
 Updated: October 10, 2019
 
 ## Introduction
 
-This lab walks you through the steps to make an OML user and run an OML script. Additionally, you will upload the required datasets to the Autonomous Data Warehouse (ADW) instance that you provisioned in the previous lab. You will use SQL Developer as an interface to the ADW instance for uploading and preparing the dataset.
+This lab walks you through the steps to make an OML user and use SQL Developer as an interface to the ADW instance for granting user privileges. Then you will use OML to run a SQL script to generate prediction models.
 
 
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
 ## Objectives
 -   Learn how to make an OML user
--   Learn how to run an OML script
 -   Learn how to connect to your new Autonomous Data Warehouse using SQL developer
+-   Learn how to grant user privileges using SQL developer
+-   Learn how to run an OML script
 
 
 ## Required Artifacts
@@ -22,7 +23,7 @@ This lab walks you through the steps to make an OML user and run an OML script. 
 Please use SQL Developer version 18.3 or later as this version contains enhancements for key Autonomous Data Warehouse features, including using ADW behind a VPN or Firewall.
 
 
-# Use OML and Connect to ADW and Prepare Data Using SQL Developer
+# OML User Creation and Prediction Modeling and SQL Developer User Privilege Editing
 
 ## Part 1. Creating an OML User
 
@@ -135,16 +136,23 @@ In order to avoid running into an access error when you run the code in OML, gra
 
 ![](./images/200/Picture200-43.png)
 
-### **STEP 4: Grant Privileges to the OML User to Access Datasets**
 
--
-
-
-## Part 3. Use OML to run a SQL script to generate prediction Models
+## Part 3. Use OML to run a SQL script to Generate Prediction Models
 
 ### **STEP 1: Run an OML script**
 
 -
+
+## Part 4. Use APEX to See the New OML Generated Tables
+
+### **STEP 1: Access Your APEX App**
+
+-
+
+### **STEP 2: Access the New OML Generated Tables**
+
+-
+
 
 ## Great Work - All Done with Lab 200!
 **You are ready to move on to the next lab. You may now close this tab.**
