@@ -1,8 +1,8 @@
-# Retail Demo - ADW, APEX, OML, OAC, 3rd Party Web App, Chatbot
+# Predicting Resource Use with Oracle Machine Learning & Autonomous Data Warehouse Cloud Service
 
 ## Introduction
 
-This is the first of several labs that are part of the **Retail Demo - ADW, APEX, OML, OAC, 3rd Party Web App, Chatbot** This workshop will walk you through the process of using the Autonomous Data Warehouse for storing analytical datasets and applying Machine Learning models in order to learn the correlation between different attributes and predict the future demand while leveraging APEX to create a simple application as well as link to a 3rd party web app. These features will also be integrated through the use of a chatbot.
+This is the first of several labs that are part of the **Predicting Resource Use with Oracle Machine Learning & Autonomous Data Warehouse Cloud Service** This workshop will walk you through the process of using the Autonomous Data Warehouse for storing analytical datasets and applying Machine Learning models in order to learn the correlation between different attributes and predict the future demand while leveraging APEX to create a simple application as well as link to a 3rd party web app. These features will also be integrated through the bonus use of a chatbot.
 
 You will take on 2 Personas during the workshop. The **Data Scientist Persona** will prepare the data for training and validating the machine learning models and apply those models in order to predict the future demand. The **Business Analyst Persona** will also build and apply Machine Learning models using Oracle Analytics Cloud service without writing a single line of code. During the workshop, you will get exposure to Oracle Autonomous Data Warehouse (ADW), Oracle Machine Learning tool (OML), Oracle Analytics Cloud Service (OAC), and Oracle Application Express (APEX).
 
@@ -28,12 +28,8 @@ You will take on 2 Personas during the workshop. The **Data Scientist Persona** 
 
 - Soon after requesting your trial you will receive the following email. You may begin working on this lab once you receive this email.
 
-[***INSERT SCREENSHOT HERE- REFER TO PAST WORKSHOP FOR DETAILS ON HOW***]
- ![](images/common/WorkshopMenu.png)
-
 ### Step 2: Navigate to Lab 100
 
 - You can see a list of Lab Guides by clicking on the Menu Icon in the upper left corner of the browser window. You're now ready to continue with Lab 100.
 
-[***INSERT SCREENSHOT HERE- REFER TO PAST WORKSHOP FOR DETAILS ON HOW***]
  ![](images/common/WorkshopMenu.png)
