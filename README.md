@@ -12,9 +12,13 @@ You will take on 2 Personas during the workshop. The **Data Scientist Persona** 
 ## Objectives
 - Provision an Autonomous Data Warehouse (ADW) Instance
 - Transfer Data to the ADW Instance
-- Connect the OAC instance to the ADW instance to access the datasets
-- Build Machine Learning models in OAC without writing a single line of code!
+- Build an APEX application
+- Import and Create API calls using APEX
 - Build and Apply Machine Learning Models Within the Autonomous Data Warehouse (ADW) Instance by using the Oracle Machine Learning Tool (OML)
+- Connect the OAC instance to the ADW instance to visualize the datasets and machine learning models
+- Connect a 3rd party web app to the ADW instance using API calls
+- Bonus: Connect a Chatbot as an Interface
+
 
 ## Required Artifacts
 - The following lab requires an Oracle Public Cloud account that will either be supplied by your instructor, or can be obtained through the following steps.
@@ -30,6 +34,6 @@ You will take on 2 Personas during the workshop. The **Data Scientist Persona** 
 
 ### Step 2: Navigate to Lab 100
 
-- You can see a list of Lab Guides by clicking on the Menu Icon in the upper left corner of the browser window. You're now ready to continue with Lab 100.
+- You can see a list of Lab Guides by clicking on the Menu Icon in the upper left corner of the browser window. You are now ready to continue with Lab 100.
 
  ![](images/common/WorkshopMenu.png)
