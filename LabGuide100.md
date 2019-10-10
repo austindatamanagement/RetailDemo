@@ -56,5 +56,5 @@ In this section you will be using APEX to create a workspace with users, create 
 
 -   
 
-## Great Work - All Done with Lab100!
+## Great Work - All Done with Lab 100!
 **You are ready to move on to the next lab. You may now close this tab.**
