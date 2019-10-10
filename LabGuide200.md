@@ -1,10 +1,10 @@
-# Lab 200 - Creating an Oracle Machine Learning (OML) User, Granting User Privileges Using SQL Developer, and Use OML to Run a SQL Script to Generate Prediction Models
+# Lab 200 - Creating an Oracle Machine Learning (OML) User, Granting OML User Privileges Using SQL Developer, and Using OML to Run a Machine Learning Model
 
 Updated: October 10, 2019
 
 ## Introduction
 
-This lab walks you through the steps to make an OML user and use SQL Developer as an interface to the ADW instance for granting user privileges. Then you will use OML to run a SQL script to generate prediction models.
+This lab walks you through the steps to make an OML user and use SQL Developer as an interface to the ADW instance for granting user privileges. Then you will use OML to run a SQL script to generate machine learning models.
 
 
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
@@ -23,7 +23,7 @@ This lab walks you through the steps to make an OML user and use SQL Developer a
 Please use SQL Developer version 18.3 or later as this version contains enhancements for key Autonomous Data Warehouse features, including using ADW behind a VPN or Firewall.
 
 
-# OML User Creation and Prediction Modeling and SQL Developer User Privilege Editing
+# Creating an Oracle Machine Learning (OML) User, Granting OML User Privileges Using SQL Developer, and Using OML to Run a Machine Learning Model
 
 ## Part 1. Creating an OML User
 
@@ -40,7 +40,7 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 This will open a new tab within your browser that asks you for a username and password.
 
--   Enter **admin** as the username and use the password you specified when provisioning your ADWC instance.
+-   Enter **admin** as the username and use the password you specified when provisioning your ADW instance.
 
 ![](./images/100/Picture700-4.png)
 
@@ -50,7 +50,7 @@ This will open a new tab within your browser that asks you for a username and pa
 
 ![](./images/100/Picture700-5.png)
 
--   Enter the required information for this user, name the user as **omluser1**. If you supplied a valid **email address**, a welcome email should arrive within a few minutes to your Inbox. Click the **Create** button, in the top-right corner of the page, to create the user.
+-   Enter the required information for this user, name the user as **testuser**. If you supplied a valid **email address**, a welcome email should arrive within a few minutes to your Inbox. Click the **Create** button, in the top-right corner of the page, to create the user.
 
 ![](./images/100/Picture700-7.png)
 
@@ -61,17 +61,13 @@ for that user which they can bookmark.
 
 -   After you click **Create** you will see that user listed in the Users section.
 
-![](./images/100/Picture700-9.png)
-
--   Using the same steps, create another user named **omluser2**.
-
 ![](./images/100/Picture700-10.png)
 
-You will use these two users later in this workshop.
+You will use this user later in this workshop.
 
 
-## Part 2. Connect SQL Developer to the ADW instance to Grant Privileges to OML users 
-In this section you will connect the SQL Developer to the ADW instance that you provisioned in Lab 100.
+## Part 2. Connect SQL Developer to the ADW Instance and Grant Privileges to OML Users 
+In this section you will connect the SQL Developer to the ADW instance that you provisioned in Lab 100 and grant your OML user priveleges.
 
 
 ### **STEP 1: Download the Connection Wallet**
@@ -137,11 +133,16 @@ In order to avoid running into an access error when you run the code in OML, gra
 ![](./images/200/Picture200-43.png)
 
 
-## Part 3. Use OML to run a SQL script to Generate Prediction Models
+## Part 3. Use OML to Run a Machine Learning Script and Generate a Model
 
-### **STEP 1: Run an OML script**
+### **STEP 1: Import an OML script**
 
 -
+
+### **STEP 2: Run the OML script**
+
+-
+
 
 ## Part 4. Use APEX to See the New OML Generated Tables
 
