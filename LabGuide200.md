@@ -1,4 +1,4 @@
-# Lab 200 - Creating an Oracle Machine Learning (OML) User, Granting OML User Privileges Using SQL Developer, and Using OML to Run a Machine Learning Model
+# Lab 200 - Using OML to Run a Machine Learning Model and SQL Developer to Grant User Privileges
 
 Updated: October 10, 2019
 
@@ -23,7 +23,7 @@ This lab walks you through the steps to make an OML user and use SQL Developer a
 Please use SQL Developer version 18.3 or later as this version contains enhancements for key Autonomous Data Warehouse features, including using ADW behind a VPN or Firewall.
 
 
-# Creating an Oracle Machine Learning (OML) User, Granting OML User Privileges Using SQL Developer, and Using OML to Run a Machine Learning Model
+# Using OML to Run a Machine Learning Model and SQL Developer to Grant User Privileges
 
 ## Part 1. Creating an OML User
 

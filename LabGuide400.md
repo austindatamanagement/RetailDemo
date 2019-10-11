@@ -171,5 +171,5 @@ Now we should import the **STATION_INFO** and **STATION_ST_WTH_TRAINING** tables
 ![](./images/300/Picture300-45.png)
 
 
-## Great Work - All Done with Lab 300!
+## Great Work - All Done with Lab 400!
 **You are ready to move on to the next lab. You may now close this tab.**

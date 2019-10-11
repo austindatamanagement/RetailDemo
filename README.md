@@ -11,13 +11,10 @@ You will take on 2 Personas during the workshop. The **Data Scientist Persona** 
 
 ## Objectives
 - Provision an Autonomous Data Warehouse (ADW) Instance
-- Transfer Data to the ADW Instance
-- Build an APEX application
-- Import and Create API calls using APEX
-- Build and Apply Machine Learning Models Within the Autonomous Data Warehouse (ADW) Instance by using the Oracle Machine Learning Tool (OML)
-- Connect the OAC instance to the ADW instance to visualize the datasets and machine learning models
-- Connect a 3rd party web app to the ADW instance using API calls
-- Bonus: Connect a Chatbot as an Interface
+- Build an Oracle Application Express (APEX) App
+- Create Machine Learning Models within the Autonomous Data Warehouse (ADW) Instance by using the Oracle Machine Learning Tool (OML)
+- Visualize Data and Prediction Models in Oracle Analytics Cloud (OAC)
+- Bonus: Integrate a 3rd Party Web App and Oracle Digital Assistant Chatbot
 
 
 ## Required Artifacts
