@@ -38,7 +38,7 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 ![](images/LabGuide100-18cd319d.png)
 
-This will open a new tab within your browser that asks you for a username and password.
+This will open a new tab within your browser that may ask you for a username and password.
 
 -   Enter **admin** as the username and use the password you specified when provisioning your ADW instance.
 
@@ -50,12 +50,11 @@ This will open a new tab within your browser that asks you for a username and pa
 
 ![](./images/100/Picture700-5.png)
 
--   Enter the required information for this user, name the user as **testuser**. If you supplied a valid **email address**, a welcome email should arrive within a few minutes to your Inbox. Click the **Create** button, in the top-right corner of the page, to create the user.
+-   Enter the required information for this user, name the user as **testuser**. If you supplied a valid **email address**, a welcome email should arrive within a few minutes to your Inbox. Note down your password. Click the **Create** button, in the top-right corner of the page, to create the user.
 
 ![](./images/100/Picture700-7.png)
 
--   Below is the email which each user receives welcoming them to the OML application. It includes a direct link to the OML application
-for that user which they can bookmark.
+-   Below is the email which each user receives welcoming them to the OML application. It includes a direct link to the OML application for that user which they can bookmark.
 
 ![](./images/100/Picture700-8.png)
 
@@ -67,7 +66,7 @@ You will use this user later in this workshop.
 
 
 ## Part 2. Connect SQL Developer to the ADW Instance and Grant Privileges to OML Users 
-In this section you will connect the SQL Developer to the ADW instance that you provisioned in Lab 100 and grant your OML user priveleges.
+In this section you will connect the SQL Developer to the ADW instance that you provisioned in Lab 100 and grant your OML user priveleges to make changes to the ADW database.
 
 
 ### **STEP 1: Download the Connection Wallet**
@@ -87,7 +86,7 @@ As ADW only accepts secure connections to the database, you need to download a w
 ![](./images/200/Picture200-16.jpg)
 
 ### **STEP 2: Connect to the database using SQL Developer**
-Start SQL Developer and create a connection for your database using the default administrator account 'ADMIN' by following these steps.
+Start SQL Developer and create a connection for your database using the default administrator account 'ADMIN' by following these steps. You will grant the testuser username specific privileges.
 
 -   Click the **New Connection** icon in the Connections toolbox on the top left of the SQL Developer homepage.
 
@@ -95,18 +94,18 @@ Start SQL Developer and create a connection for your database using the default 
 
 -   Fill in the connection details as below:
 
--   **Connection Name:** admin_high
+-   **Connection Name:** ADWRETAIL@ADMIN
 
--   **Username:** admin
+-   **Username:** ADMIN
 
 -   **Password:** The password you specified during provisioning your instance
 
 -   **Connection Type:** Cloud Wallet
 
--   **Configuration File:** Enter the full path for the wallet file you downloaded before, or click the **Browse button** to point to the location of the file.
+-   **Configuration File:** Enter the full path for the wallet file you downloaded before, or click the **Browse...** button to point to the location of the file.
 
--   **Service:** There are 3 pre-configured database services for each database. Pick **&lt;databasename&gt;_high** for this lab. For
-example, if you the database you created was named adwfinance, select adwfinance_high as the service.
+-   **Service:** There are 3 pre-configured database services for each database. Pick **adwretail_medium** for this lab. For
+example, the database you created was named adwretail, select adwretail_medium as the service.
 
 *Note* : SQL Developer versions prior to 18.3 ask for a **Keystore Password.** Here, you would enter the password you specified when downloading the wallet from ADW.
 
@@ -120,41 +119,57 @@ example, if you the database you created was named adwfinance, select adwfinance
 ### **STEP 3: Grant Privileges to the OML User to Access Datasets**
 In order to avoid running into an access error when you run the code in OML, grant all privleges to the OML user for the tables you created in the database.
 
--   Under your connection in the SQL Developer, right-click on **Station_Info** table, select **Privileges** and then select **Grant**.
+-   Under your connection in the SQL Developer, expand the hierarchy tree and search for **Other Users**. Expand it and find your OML user you created labeled **testuser**.
+
+-   Right click the user and select **Edit User...**.
 
 ![](./images/200/Picture200-41.png)
 
--   In the popped screen, select your OML user in the **Uers/Roles** field, mark **Grant ALL** option and click on **Apply**.
+-   In the popped up screen, navigate to **System Privileges** and click the checkboxes under the **Admin Option** column for the following Privileges: **ALTER ANY TABLE**, **CREATE ANY TABLE**, **CREATE TABLE**, **DELETE ANY TABLE**, **DROP ANY TABLE**, **INSERT ANY TABLE**, **READ ANY TABLE**, **SELECT ANY TABLE**, **UNDER ANY TABLE**, **UPDATE ANY TABLE**.
+
+-   Once they have all been selected, click **Apply**. After a few moments, click anywhere again and a Successful pop up window should show up. Click **OK**.
+
+-   This will grant the necessary privileges for the OML user **testuser** to run the future prediction model OML script.
 
 ![](./images/200/Picture200-42.png)
-
--   You should see a message indicating that your action was successful. Repeat the same steps to also grant privileges on the table **Station_Status_Weather**.
-
-![](./images/200/Picture200-43.png)
 
 
 ## Part 3. Use OML to Run a Machine Learning Script and Generate a Model
 
 ### **STEP 1: Import an OML script**
 
--
+-   Navigate to and click on **Oracle ML SQL Notebooks** from the development page of your ADW instance service console.
+
+-   Sign in as **testuser** with the appropriate password.
+
+-   Click on **Notebooks** under the **Quick Actions** section.
+
+-   Click **Import** and select **ML Prediction Models.json** from the **files** folder for this lab.
+
+-   After the successful import message pops up, click on the notebook.
 
 ### **STEP 2: Run the OML script**
+-   OML notebooks are structured with Paragraph sections that consist of markdown and SQL code. The paragraphs can be run one by one or all together.
 
--
+-   Click on the **Run all paragraphs** button.
+
+-   You have just ran a prediction model using OML through a SQL script.
 
 
 ## Part 4. Use APEX to See the New OML Generated Tables
 
 ### **STEP 1: Access Your APEX App**
 
--
+-   Navigate to and click on **Oracle APEX** from the development page of your ADW instance service console.
+
+-   Sign in as **developer** to the **developer** workspace with the appropriate browser.
 
 ### **STEP 2: Access the New OML Generated Tables**
 
--
+-   Click on **SQL Workshop** and then on **Object Browser** to view the tables of your Autonomous Data Warehouse.
+
+-   Note the new tables that have been added through the OML script by the OML user you made and then gave privileges to.
 
 
 ## Great Work - All Done with Lab 200!
-**You are ready to move on to the next lab. You may now close this tab.**
-
+**You are ready to move on to the next lab. You may now close this tab.*
