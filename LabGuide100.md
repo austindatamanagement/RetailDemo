@@ -127,7 +127,7 @@ In this section you will use Oracle Application Express (APEX) to create a works
 
 -   The application is now installed.
 
-### **STEP 4: Test the App**
+### **STEP 5: Test the App**
 
 -   Click on **App Builder**.
 
@@ -145,14 +145,24 @@ In this section you will use Oracle Application Express (APEX) to create a works
 
 -   Close the app from your browser when you are ready.
 
-### **STEP 4: Load Data through APEX**
+### **STEP 6: Load Data through APEX**
 
--  
+-   Click on **SQL Workshop**, then **Utilities**, and then **Data Workshop**.
 
+-   Continue by clicking on **Load Data** which allows you to load CSV, XLSX, XML, and JSON data.
 
-### **STEP 5: Test the App**
+-   Click **Choose File** and go the **Lab Files** folder for this workshop and select **Transactions_History.xlsx** to open.
 
--   
+-   A preview will pop up where you can view some details about the data you are loading. Proceed by entering in a **Table Name**. For this lab, use **TRANSACTION_HISTORY** for the table name. The Error Table Name will be constructed automatically.
+
+-   Finish by clicking on **Load Data**.
+
+-   A table creation confirmation page should show up. Continue by clicking on **View Table** to view the table that has been added to your ADW through APEX.
+
+-   Repeat the above components of STEP 6 for the **US_CENSUS.csv** data file under the **Lab Files** folder for this workshop.
+
+-   Confirm that the two data files you loaded have been imported as tables.
+
 
 ## Great Work - All Done with Lab 100!
 **You are ready to move on to the next lab. You may now close this tab.**
