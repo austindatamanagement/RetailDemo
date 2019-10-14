@@ -151,7 +151,11 @@ In order to avoid running into an access error when you run the code in OML, gra
 ### **STEP 2: Run the OML script**
 -   OML notebooks are structured with Paragraph sections that consist of markdown and SQL code. The paragraphs can be run one by one or all together.
 
--   Click on the **Run all paragraphs** button.
+-   In order for the notebook to communicate with the database, an interpreter binding must be set for the database connection. Click on the **Gear** interpreter binding button and click on **adwretail_low**. To run this script, a low concurrency option is preferred to avoid script errrors.
+
+-   Click **Save** to bind the connection to the OML interpreter.
+
+-   Then, click on the **Run all paragraphs** button.
 
 -   You have just ran a prediction model using OML through a SQL script.
 
