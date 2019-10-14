@@ -151,7 +151,7 @@ In this section you will use Oracle Application Express (APEX) to create a works
 
 -   Continue by clicking on **Load Data** which allows you to load CSV, XLSX, XML, and JSON data.
 
--   Click **Choose File** and go the **Lab Files** folder for this workshop and select **Transactions_History.xlsx** to open.
+-   Click **Choose File** and go the **files** folder for this workshop and select **Transactions_History.xlsx** to open.
 
 -   A preview will pop up where you can view some details about the data you are loading. Proceed by entering in a **Table Name**. For this lab, use **TRANSACTION_HISTORY** for the table name. The Error Table Name will be constructed automatically.
 
