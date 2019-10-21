@@ -101,7 +101,7 @@ In this section you will create an OAC instance.
 
 ## Part 3. Import Datasets from ADW to OAC
 
-### **STEP 1: Import the Training Datasets for the ML Model to OAC**
+### **STEP 1: Configure a Database Connection**
 
 -   In the Oracle Analytics Cloud Homepage, click on the **Create** button on the top-right and then click on **Data Set** in the popped menu.
 
@@ -115,9 +115,9 @@ In this section you will create an OAC instance.
 
 ![](./images/300/Picture300-43.png)
 
+### **STEP 2: Import the Training Datasets for the ML Model to OAC**
 
-Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_ITEMS**, and **OOW_DEMO_SALES_HISTORY** tables prepared in the SQL Developer to our OAC instance. We need the **sdsdsdsd** table for creating the graphs and the **sdsdsdsd** table for training the ML model in OAC. In the next steps, we show you how to import the **OOW_DEMO_STORES** table. You can repeat the same steps to import the **sdfsdfsdfsdfsdf** table.
-
+Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_REGIONS**, **OOW_DEMO_ITEMS**, and **OOW_DEMO_SALES_HISTORY** tables prepared in the SQL Developer to our OAC instance. We need these tables for creating visualizations and for training the ML model in OAC. In the next steps, we show you how to import the **OOW_DEMO_STORES** table. You can repeat the same steps to import the other three tables.
 
 -   Select the desired table (**OOW_DEMO_STORES**) from the list.
 
@@ -127,9 +127,7 @@ Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_ITEMS**, and **OOW_DEMO
 
 ![](./images/300/Picture300-46.png)
 
--   When the data set is loaded, change the **sdsddsd** column from **Measure** type to **Attribute** type. In order to do so, click on the # sign next to the column name and select **Attribute** from the drop-down menu.
-
--   Do this for the following columns: **sdfsdfsdsd**, **sdsdsds**.
+-   When the data set is loaded, change columns containing **ID** (such as **ID**, **PRODUCT_ID**, **STORE_ID**) from **Measure** type to **Attribute** type. In order to do so, click on the # sign next to the column name and select **Attribute** from the drop-down menu. Each data set will have a varying amount of columns containing **ID**. Make sure to check through all columns. The reason for changing the type is because we will not be performing any math operations on the IDs and hence we should treat the IDs as attributes.
 
 ![](./images/300/Picture300-47.png)
 
@@ -137,22 +135,84 @@ Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_ITEMS**, and **OOW_DEMO
 
 ![](./images/300/Picture300-48.png)
 
--   You are done with adding the first table. Repeat the above import table steps for the other tables mentioned above.
+-   You are done with adding the first table. Repeat the above components in "Part 3 STEP 2" for the other 3 tables mentioned above. 
 
--   After importing all tables, you can see them under the **Data Set** tab in the **Data** section.
+-   After importing all the tables, you can see them by first clicking the **Hamburger menu** icon and then click on the **Data** section which should default to the **Data Sets** tab. Confirm that you have imported 4 tables.
 
 ![](./images/300/Picture300-45.png)
 
 ## Part 4. Create a Data Flow
 
-### **STEP 1: Add the datasets**
+### **STEP 1: Add and Join the Datasets**
 
--    
+-   Start to create a Data Flow by clicking on **Create**. 
 
+-   A window will pop up asking for data sets to be selected. Continue by clicking on the **OOW_DEMO_REGIONS** Data Set and then clicking on **Add**.
 
-### **STEP 2: Select, Rename, Add Columns to a Master Table**
+-   Click on the **Circled Plus** button and then on **Add Data** to then add the next data set **OOW_DEMO_STORES** by clicking on it and then clicking on **Add**.
 
--   
+-   This will generate a Join step in the Data Flow Diagram. Modify it by selecting **All rows** in the drop down box for **Input 2** in the **Keep Rows** section.
+
+-   Then, scroll down and under the **Match Columns** section, click on **ID** and then change it to **REGION_ID** from the drop down box for **Input 2**.
+
+-   After configuring this Join step, click on the **Circled Plus** button again and then on **Add Data** to then add the next data set **OOW_DEMO_SALES_HISTORY** by clicking on it and then clicking on **Add**.
+
+-   This will generate another Join step in the Data Flow Diagram. Modify it by selecting **All rows** in the drop down box for **Input 2** in the **Keep Rows** section.
+
+-   Then, scroll down and under the **Match Columns** section, click on **ID** for **Input 1** and change it to **ID_1** and click on **ID** for **Input 2** and change it to **STORE_ID**.
+
+-   After this newly generated Join step in the Data Flow Diagram, click on the **Circled Plus** button one more time and then on **Add Data** to then add the last data set **OOW_DEMO_STORES** by clicking on it and then clicking on **Add**.
+
+-   After configuring this second Join step, click on the **Circled Plus** button again and then on **Add Data** to then add the next data set **OOW_DEMO_ITEMS** by clicking on it and then clicking on **Add**.
+
+-   This will generate the third Join step in the Data Flow Diagram. Modify it by selecting **All rows** in the drop down box for **Input 1** in the **Keep Rows** section.
+
+-   Then, scroll down and under the **Match Columns** section, click on **ID** for **Input 1** and change it to **PRODUCT_ID**.
+
+-   Now the 4 Data Sets have been joined.
+
+### **STEP 2: Select Columns**
+
+-   Since we are done adding the Join steps, click on the **Circled Plus** button again and then on **Select Columns** to help finalize the columns we want to keep.
+
+-   All the columns will be selected. Let's select some columns we want to remove from this list by holding the ctrl button and left clicking on the columns. Select the following: **IS_DEFAULT_YN**, **REGION_COLOR**, **REGION_ZOOM**, **ROW_VERSION_NUMBER**, **N1**, **N2**, **N3**, **N4**, **REGION_ID**, **ROW_VERSION_NUMBER_1**, **ID_2**, **CREATED_ON**, **DATE_OF_SALE**, **PRODUCT_ID**, **STORE_ID**, and **ROW_VERSION_NUMBER_2**.
+
+-   Having selected all the above columns, click **Remove selected**.
+
+-   We are done with selecting our columns. 
+
+### **STEP 3: Rename Columns**
+
+-   Let's rename some columns. Click on the **Circled Plus** button again and then on **Rename Columns** to help finalize the columns we want.
+
+-   Under the **Source** column, find **ID** and change the value in the **Rename** column to **REGION_ID**.
+
+-   Next, under the **Source** column, find **ID_1** and change the value in the **Rename** column to **STORE_ID**.
+
+-   Then, find **ID_3** and change the value in the **Rename** column to **ITEM_ID**.
+
+-   Finally, find **MSRP** and change the value in the **Rename** column to **SALE_PRICE**.
+
+-   We are done renaming columns. 
+
+### **STEP 2: Add Columns**
+
+-   Let's finish constructing our master table by adding columns. Do this by clicking on the **Circled Plus** button again and then on **Add Columns** to help finalize the columns.
+
+-   In the **Name** box, input **SALES**.
+
+-   In the code calculation box, type in (without the quotes): "QUANTITY"
+
+-   Wait a few seconds as the search query goes through and then click on the **# QUANTITY** popup.
+
+-   Afterwards, continue typing the following (without the quotes): " * SALE_PRICE"
+
+-   Wait a few seconds as the search query goes through and then click on the **# SALE_PRICE** popup.
+
+-   Scroll down and click **Validate**.
+
+-   After the calculation is validated, finish by clicking **Apply**.
+
 
 ## Great Work - All Done with Lab 400!
 **You are ready to move on to the next lab. You may now close this tab.**
