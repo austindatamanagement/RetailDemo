@@ -25,41 +25,19 @@ This lab walks you through the steps to provision an Oracle Analytics Cloud (OAC
 In this section you will create an OAC instance.
 
 
-### **STEP 1: Sign in to Oracle Cloud**
+### **STEP 1: Create an OAC Instance**
 
--   Go to [cloud.oracle.com](https://cloud.oracle.com), click **Sign In** to sign in with your Oracle Cloud account.
+-   Sign in to cloud.oracle.com with your account credentials as done in the previous labs.
 
-![](./images/300/Picture300-2.png)
+-   Click on the **Hamburger menu** icon.
 
--   Enter your **Cloud Account Name** and click **My Services**.
+-   Scroll down to the **More Oracle Cloud Services** section, hover over **Platform Services** and then click on **Analytics**. 
 
-![](./images/300/Picture300-3.jpg)
+-   Click on **Create Instance**.
 
--   Enter your Oracle Cloud **username** and **password**, and click **Sign In**.
+-   Provide all the required information (fields specified by \*). For the **Instance Name**, input **OACRD**. For the **Region**, select from the dropdown box the same region as your ADW instance. For the **Number of OCPUs**, select from the dropdown box **2**.
 
-![](./images/300/Picture300-4.png)
-
-
-
-### **STEP 2: Create an OAC Instance**
-
--   Go to your **Dashboard** page by clicking **My Services Dashboard** from the OCI Console navigation menu.
-
-![](images/LabGuide300-029b17f5.png)
-
-- Click on **Create Instance**.
-
-![](./images/300/Picture300-21.png)
-
--   Under **All Services**, find **Analytics** and click on **Create**.
-
-![](./images/300/analyticsDash.png)
-
--   On the **Analytics** page, click on **Create Instance**.
-
-![](./images/300/AnalyticsInstance.png)
-
--   Provide all the required information (fields specified by \*) and then click on **Next**.
+-   Then click on **Next**.
 
 ![](./images/300/Picture300-24.png)
 
@@ -75,7 +53,7 @@ In this section you will create an OAC instance.
 
 ![](./images/300/expand.png)
 
--   Now click on Analytics URL which redirects you to a new page.
+-   Now click on **Oracle Analytics Cloud URL** which redirects you to a new page. Save this web page link for future use.
 
 ![](./images/300/OACURL.png)
 
@@ -89,7 +67,7 @@ In this section you will create an OAC instance.
 
 ## Part 2. Connect OAC to ADW
 
-### **STEP 3: Connect OAC to ADW**
+### **STEP 1: Connect OAC to ADW**
 
 -   In the Oracle Analytics Cloud Homepage, click on the **Create** button on the top-right and then click on **Connection** in the popped menu.
 
@@ -99,26 +77,23 @@ In this section you will create an OAC instance.
 
 ![](./images/300/Picture300-32.png)
 
--   Complete all the required fields in the wizard as described in the table below and Save the connection. Note that you need the ADW instance **Wallet** in order to be able to complete these fields (similar to connecting the SQL Developer to the ADW instance). Please refer to the instruction in **Lab100** for accessing the **Wallet**.
-
+-   Complete all the required fields in the wizard as described in the table below and Save the connection. Note that you need the ADW instance **Wallet** file in order to be able to complete these fields (this step is similar to connecting  SQL Developer to the ADW instance). Please refer to previous labs for a refresher on how to access a Wallet file if needed.
 
 -   You should fill the following connection fields, then click **Save**:
 
--   **Connection Name:** Type a name for this connection (e.g. ADWDBBIKESHARE)
+-   **Connection Name:** Type a name for this connection. For this lab, use **ADWRETAIL**.
 
 -   **Client Credentials:** Click on **‘Select’** and select the zipped **Wallet** file (The **cwallet.sso** file will be automatically extracted from the **Wallet** file)
 
--   **Username:** Admin (the username you created during the ADW provisioning)
+-   **Username:** Admin (the username you created during the ADW provisioning).
 
--   **Password:** The password you specified during provision of your ADW instance
+-   **Password:** The password you specified during the provisioning of your ADW instance.
 
--   **Service Name:** Select your database name and desired service level (low, medium, high) from the drop down list. (e.g.  dbbikeshare_high)
+-   **Service Name:** Select your database name and desired service level (low, medium, high) from the drop down list. For this lab, select your instance service named **ADWRETAIL_high**.
 
 ![](images/300/Picture300-33-updated.png)
 
-
-
--   You can see your connection listed under the Connections tab in the Data page.
+-   You can now see your connection listed under the Connections tab in the Data page.
 
 ![](./images/300/Picture300-34.png)
 
@@ -126,7 +101,7 @@ In this section you will create an OAC instance.
 
 ## Part 3. Import Datasets from ADW to OAC
 
-### **STEP 4: Import the Training Datasets for the ML Model to OAC**
+### **STEP 1: Import the Training Datasets for the ML Model to OAC**
 
 -   In the Oracle Analytics Cloud Homepage, click on the **Create** button on the top-right and then click on **Data Set** in the popped menu.
 
@@ -136,40 +111,48 @@ In this section you will create an OAC instance.
 
 ![](./images/300/Picture300-42.png)
 
--   Select the **ADMIN** user from the list of users to import the datasets prepared in the SQL Developer.
+-   Select the **DEVELOPER** user from the list of users to import the datasets prepared in SQL Developer.
 
 ![](./images/300/Picture300-43.png)
 
 
-Now we should import the **STATION_INFO** and **STATION_ST_WTH_TRAINING** tables prepared in the SQL Developer to our OAC instance. We need the **STATION_INFO** table for creating the graphs and the **STATION_ST_WTH_TRAINING** table for training the ML model in OAC. In next steps, we show you how to import the **STATION_ST_WTH_TRAINING** table. You can repeat the same steps to import the **STATION_INFO** table.
+Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_ITEMS**, and **OOW_DEMO_SALES_HISTORY** tables prepared in the SQL Developer to our OAC instance. We need the **sdsdsdsd** table for creating the graphs and the **sdsdsdsd** table for training the ML model in OAC. In the next steps, we show you how to import the **OOW_DEMO_STORES** table. You can repeat the same steps to import the **sdfsdfsdfsdfsdf** table.
 
 
--   Select the desired table (**STATION_ST_WTH_TRAINING**) from the list.
+-   Select the desired table (**OOW_DEMO_STORES**) from the list.
 
 ![](./images/300/Picture300-44.png)
 
--   Add all columns to your selection.
-
-![](./images/300/Picture300-45.png)
-
--   Give a name to the table (**STATION_ST_WTH_TRAINING**) and add it to your data set.
+-   Add all columns to your selection by clicking on **Add All**. The auto-generated name for the new table will work fine. Finish by clicking on **Add**. 
 
 ![](./images/300/Picture300-46.png)
 
--   When the data set is loaded, change the **STATIONID** column from **Measure** type to **Attribute** type. In order to do so, click on the # sign next to the column name and select **Attribute** from the drop-down menu.
+-   When the data set is loaded, change the **sdsddsd** column from **Measure** type to **Attribute** type. In order to do so, click on the # sign next to the column name and select **Attribute** from the drop-down menu.
+
+-   Do this for the following columns: **sdfsdfsdsd**, **sdsdsds**.
 
 ![](./images/300/Picture300-47.png)
-
 
 -    Then click on **Apply Script**.
 
 ![](./images/300/Picture300-48.png)
 
+-   You are done with adding the first table. Repeat the above import table steps for the other tables mentioned above.
 
 -   After importing all tables, you can see them under the **Data Set** tab in the **Data** section.
 
 ![](./images/300/Picture300-45.png)
 
+## Part 4. Create a Data Flow
+
+### **STEP 1: Add the datasets**
+
+-    
+
+
+### **STEP 2: Select, Rename, Add Columns to a Master Table**
+
+-   
 
 ## Great Work - All Done with Lab 400!
 **You are ready to move on to the next lab. You may now close this tab.**
