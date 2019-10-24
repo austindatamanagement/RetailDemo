@@ -213,6 +213,24 @@ Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_REGIONS**, **OOW_DEMO_I
 
 -   After the calculation is validated, finish by clicking **Apply**.
 
+- **(TO BE PROOFREAD AFTER THIS POINT)**
+
+-   Make a column DISCOUNT for: "(ITEM_PRICE-SALE_PRICE)/ITEM_PRICE"
+
+-   Click plus icon to make a Branch. Click the first Save Data in the data flow.  Make the name Master_Table.
+
+-   Click the second Save Data in the data flow.  Make the name Master_Table_ADW. Change the Save Data to box to Database Connection. 
+
+-   Click Select Connection and select the connection.
+
+-   Save the entire Data Flow in the top right save button. Name it Retail Demo Data Flow.
+
+-   After it's saved, click Run Data Flow.
+
+OAC VISUALIZATIONS PART NOW
+
+-   Go to Data, then Data Sets and find the created Master_Table table (not the ADW one). Click it's hamburger menu and click on create new project to base it off that table.
+
 
 ## Great Work - All Done with Lab 400!
 **You are ready to move on to the next lab. You may now close this tab.**
