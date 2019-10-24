@@ -72,7 +72,7 @@ In this section you will create an OAC instance.
 
 ![](./images/400/0i.png)
 
--   Complete all the required fields in the wizard as described in the table below and Save the connection. Note that you need the ADW instance **Wallet** file in order to be able to complete these fields (this step is similar to connecting  SQL Developer to the ADW instance). Please refer to previous labs for a refresher on how to access a Wallet file if needed.
+-   Complete all the required fields in the wizard as described in the steps below and Save the connection. Note that you need the ADW instance **Wallet** file in order to be able to complete these fields (this step is similar to connecting  SQL Developer to the ADW instance). Please refer to previous labs for a refresher on how to access a Wallet file if needed.
 
 -   You should fill the following connection fields, then click **Save**:
 
