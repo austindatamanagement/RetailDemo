@@ -152,7 +152,7 @@ Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_REGIONS**, **OOW_DEMO_I
 
 ### **STEP 1: Add and Join the Datasets**
 
--   Start to create a Data Flow by clicking on **Create**. 
+-   First, navigate back to the Oracle Analytics Cloud home page. Once you are back on the home page, click on **Create**, then on **Data Flow** to create a new data flow. 
 
 ![](./images/400/11.png)
 
