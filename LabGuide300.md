@@ -85,6 +85,43 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 -   Navigate to the **stores** API and copy and paste the Full URL into your browser to see the different stores.
 
+## Part 3. Use HTML Web Page to Consume APIs
+
+### **STEP 1: Copy API URLs**
+
+-   Under **salesAPI**, click on the **stores** API and copy the **Full URL** and paste it into a separate notes file(i.e. Notepad, Microsoft Word, Apple Notes, etc.) to be used later.
+
+-   Next, click on the **prediction** API and copy the **Full URL** and paste it into that same separate notes file.  Be sure to label which URL is which so that you do not confuse them later.
+
+### **STEP 2: Add API URLs to Web Page Code**
+
+-   Download the **WebPage.zip** file from the **files** folder in this lab.
+
+-   Go to your Downloads folder and unzip the .zip file.
+
+-   Once this folder is unzipped, navigate to the Functions.js file and open it with any IDE or text editor you have available (i.e. TextEdit, Notepad, Script Editor, Visual Studio, etc.)
+
+-   With the .js file open, notice the **DEFINE STORES API REQUEST URL** instructions and follow the steps to paste your ‘stores’ API URL, from your notes, into the **stores_api_url** variable in the code.
+
+-   Next, copy your ‘prediction’ API URL, from your notes, into the **prediction_api_url** variable in the code using the **DEFINE PREDICTION API REQUEST URL** instructions provided in the code. (Note: Be sure to read the instructions carefully, as they are different than the instructions for the ‘stores’ API URL.)
+
+-   Once you have replaced the two URLs, you must resave the file. (Note: Make sure that you keep the .js file type when you save the file in your text editor. Also, be sure that when you are saving the updated file, you are replacing the original file in the **WebPage** folder.)
+
+### **STEP 3: Test API Calls on Web Page**
+
+-   You have now implemented your API URLs from APEX into the code for the HTML Web Page, so your APIs are ready to be consumed!
+
+-   Navigate again to the **WebPage** folder in your downloads.
+
+-   To open the web page, right click on the **Layout.html** file, select **Open With**, and select the web browser of your choice (Google Chrome, Safari, Firefox, Internet Explorer supported).
+
+-   When the web page opens up, you can navigate to the **Select Store:** dropdown.  When you click on the dropdown, the list of stores is populated by the response data of your ‘stores’ REST API call using the URL you provided in the code from APEX.
+
+-   Once you select a store from the dropdown, you can click the **See Store Details** button to see the product details for the selected store.
+
+-   The store details table is populated with the response data from the ‘products’ REST API call using the URL you provided in the code from APEX.
+
+-   Now, you can use the dropdown to view any store’s inventory details!  Each time you select a new store and click the **See Store Details** button, a new API call is made to get the products for that specific store in order to populate the table.
 
 ## Great Work - All Done with Lab 300!
 **You are ready to move on to the next lab. You may now close this tab.**
