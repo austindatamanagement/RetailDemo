@@ -30,16 +30,25 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 -   Navigate to and click on **Oracle APEX** from the development page of your ADW instance service console.
 
+![](./images/300/3.png)
+
 -   Sign in as **developer** to the **developer** workspace with the appropriate browser.
 
+![](./images/300/4.png)
 
 ### **STEP 2: Enable Oracle Restful Data Services (ORDS)**
 
 -   Click on **SQL Workshop** and then on **RESTful Services**.
 
+![](./images/300/5.png)
+
 -   Then, click on **Register Schema with ORDS**.
 
+![](./images/300/6.png)
+
 -   A Schema attributes window will pop up. Click **Save Schema Attributes** to continue.
+
+![](./images/300/7.png)
 
 ## Part 2. Import and Create APIs
 
@@ -48,11 +57,17 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 -   Click on **Import**. 
 
+![](./images/300/8.png)
+
 -   Click on **Choose File** and select **ORDS_REST_DEVELOPER_salesAPI_2019_10_28.sql** from the files folder for this workshop.
 
 -   Finish by clicking on **Import**.
 
+![](./images/300/9.png)
+
 -   The APIs have now been imported. You can view them by clicking the arrow button to expand **Modules** and then **salesAPI**. The APIs interface with the data that is on the Autonomous Data Warehouse that you have provisioned and APEX serves as the front end.
+
+![](./images/300/10.png)
 
 
 ### **STEP 2: Create APIs**
@@ -61,11 +76,17 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 -   Then click on **Create Template** to construct your own custom API.
 
+![](./images/300/1.png)
+
 -   We will construct a regions API that showcases all the store regions. Enter **regions** into the URI Template input field.
 
 -   Finish by clicking on **Create Template**.
 
+![](./images/300/12.png)
+
 -   We will now need to create a resource handler in order for the API to run a script. Click **Create Handler** to get started.
+
+![](./images/300/13.png)
 
 -   The API will make a GET REST call to query the data from the ADW.
 
@@ -75,15 +96,25 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 -   Finish by clicking on **Create Handler**.
 
+![](./images/300/14.png)
+
 ### **STEP 3: Check and Test APIS**
 
 -   You have now imported and created various RESTful APIs with APEX. 
 
 -   Grab the **Full URL** of the regions API you just created and paste it into your browser and press the enter button.
 
+![](./images/300/15.png)
+
 -   You will see all the different regions from the data in your ADW. You can now utilize this data however you want.
 
+![](./images/300/16.png)
+
 -   Navigate to the **stores** API and copy and paste the Full URL into your browser to see the different stores.
+
+![](./images/300/17.png)
+
+![](./images/300/18.png)
 
 ## Part 3. Use HTML Web Page to Consume APIs
 
@@ -91,7 +122,11 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 -   Under **salesAPI**, click on the **stores** API and copy the **Full URL** and paste it into a separate notes file(i.e. Notepad, Microsoft Word, Apple Notes, etc.) to be used later.
 
+![](./images/300/19.png)
+
 -   Next, click on the **prediction** API and copy the **Full URL** and paste it into that same separate notes file.  Be sure to label which URL is which so that you do not confuse them later.
+
+![](./images/300/20.png)
 
 ### **STEP 2: Add API URLs to Web Page Code**
 
@@ -101,9 +136,11 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 -   Once this folder is unzipped, navigate to the Functions.js file and open it with any IDE or text editor you have available (i.e. TextEdit, Notepad, Script Editor, Visual Studio, etc.)
 
--   With the .js file open, notice the **DEFINE STORES API REQUEST URL** instructions and follow the steps to paste your ‘stores’ API URL, from your notes, into the **stores_api_url** variable in the code.
+-   With the .js file open, notice the **DEFINE STORES API REQUEST URL** instructions and follow the steps to paste your ‘stores’ API URL, from your notes, into the **stores_api_url** variable in the code. (Note: Refer to the image below.)
 
 -   Next, copy your ‘prediction’ API URL, from your notes, into the **prediction_api_url** variable in the code using the **DEFINE PREDICTION API REQUEST URL** instructions provided in the code. (Note: Be sure to read the instructions carefully, as they are different than the instructions for the ‘stores’ API URL.)
+
+![](./images/300/21.png)
 
 -   Once you have replaced the two URLs, you must resave the file. (Note: Make sure that you keep the .js file type when you save the file in your text editor. Also, be sure that when you are saving the updated file, you are replacing the original file in the **WebPage** folder.)
 
@@ -117,7 +154,11 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 -   When the web page opens up, you can navigate to the **Select Store:** dropdown.  When you click on the dropdown, the list of stores is populated by the response data of your ‘stores’ REST API call using the URL you provided in the code from APEX.
 
+![](./images/300/22.png)
+
 -   Once you select a store from the dropdown, you can click the **See Store Details** button to see the product details for the selected store.
+
+![](./images/300/23.png)
 
 -   The store details table is populated with the response data from the ‘products’ REST API call using the URL you provided in the code from APEX.
 
