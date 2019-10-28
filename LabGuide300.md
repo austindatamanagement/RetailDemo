@@ -48,7 +48,7 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 -   Click on **Import**. 
 
--   Click on **Choose File** and select **ORDS_REST_DEVELOPER_salesAPI_2019_10_09.sql** from the files folder for this workshop.
+-   Click on **Choose File** and select **ORDS_REST_DEVELOPER_salesAPI_2019_10_28.sql** from the files folder for this workshop.
 
 -   Finish by clicking on **Import**.
 
