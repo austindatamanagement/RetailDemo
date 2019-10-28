@@ -65,6 +65,10 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 ![](./images/300/9.png)
 
+-   Note: If you encounter the error, shown in the image below, when importing your .sql file, this means that there is a problem with your schema defined in the .sql file.  To solve this issue, you can go into the .sql file and alter the schema names to reflect whatever you named your workspace/username as in Lab 100.
+
+![](./images/300/9b.png)
+
 -   The APIs have now been imported. You can view them by clicking the arrow button to expand **Modules** and then **salesAPI**. The APIs interface with the data that is on the Autonomous Data Warehouse that you have provisioned and APEX serves as the front end.
 
 ![](./images/300/10.png)
@@ -76,7 +80,7 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 -   Then click on **Create Template** to construct your own custom API.
 
-![](./images/300/1.png)
+![](./images/300/11.png)
 
 -   We will construct a regions API that showcases all the store regions. Enter **regions** into the URI Template input field.
 
