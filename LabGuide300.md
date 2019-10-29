@@ -65,9 +65,9 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 ![](./images/300/9.png)
 
--   Note: If you encounter the error, shown in the image below, when importing your .sql file, this means that there is a problem with your schema defined in the .sql file.  To solve this issue, you can go into the .sql file and alter the schema names to reflect whatever you named your workspace/username as in Lab 100.
+>    *Note: If you encounter the error, shown in the image below, when importing your .sql file, this means that there is a problem with your schema defined in the .sql file.  To solve this issue, you can go into the .sql file and alter the schema names to reflect whatever you named your workspace/username as in Lab 100.  In your .sql file, simply change 'DEVELOPER' to your workspace/username in the lines denoted by the arrows below. Once you have executed this change, save the file, and try again to import.*
 
-![](./images/300/9b.png)
+>   ![](./images/300/9b.png)
 
 -   The APIs have now been imported. You can view them by clicking the arrow button to expand **Modules** and then **salesAPI**. The APIs interface with the data that is on the Autonomous Data Warehouse that you have provisioned and APEX serves as the front end.
 
