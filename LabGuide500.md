@@ -25,81 +25,54 @@ This lab walks you through the steps on how you can use the Oracle Analytics Clo
 
 ## Part 1. Visualize results in OAC
 
-### **STEP 1: Load Results of the OML Model to OAC**
+### **STEP 1: Create a Project**
 
--   In the Oracle Analytics Cloud Homepage, click on the **Create** button on the top-right and then click on **Data Set** in the popped menu.
+-   From Oracle Analytics Cloud, click on the hamburger menu icon and click on **Data**. 
 
-![](./images/500/Picture500-31.png)
+![](./images/500/0.png)
 
--   Select the connection that you have created in  **Lab 300**.
+-   Then, find **Master_Table** and click on it's hamburger menu. From there, click on **Create Project**. This will make a new project based on the dataset.
 
-![](./images/500/Picture500-32.png)
-
--   Select the OML user created in **Lab 100** from the list of users to import the tables that contain the results of the model created and ran in OML.
-
-![](./images/500/Picture500-33.png)
+![](./images/500/1.png)
 
 
--  You should import tables **SSW_V_RES** and **SSW_P_RES** to the OAC instance. Import those tables as descirbed in **Step 4** in **Lab 300**. After completing these process, you should see four datasets in the data section.
+### **STEP 2: Create a Visualization**
 
-![](./images/500/Picture500-34.png)
+-   If you don't see all the columns, expand **Master_Table** on the left with the **small arrow** in order to see all the columns in the data set.
 
+![](./images/500/2.png)
 
+-   Select these three columns (**STORE_ADDRESS**, **TRANSACTIONS**, **SALES**) together from the dropdown by holding down either ctrl (Windows/Linux) or command (Mac) depending on your operating system. Once all three are selected together, right click and select **Pick Visualization...**.
 
-### **STEP 2: Add Datasets to the Project**
+![](./images/500/3.png)
 
--  Open the **BikeSharePrediction** project that you imported to the OAC instance in **Lab 400**. Under the **Visualize** tab, click on the **+** icon next to the **Data Elements** and select **Add Data Set**.
+-   Then, click on the **Table Icon** to make a **Table** visualization. The visualization will appear on the right.
 
-![](./images/500/Picture500-41.png)
+![](./images/500/4.png)
 
--   Select **SSW_P_RES**, **SSW_V_RES**, and **STATION_INFO** and click on **Add to Project**.
+-   Let's clean up how it looks. In the bottom left window, expand **SALES** by clicking on the **small arrow** and then click on **Number Format** and click on **Currency**.
 
-![](./images/500/Picture500-42.png)
+![](./images/500/5.png)
 
--   Next, go to the Prepare tab and in the **Data Diagram** section, click on the **0** in the middle of the line between **SSW_P_RES** and **STATION_INFO** datasets (it appears when you move your mouse between the two datasets).
+-   Scroll down in the same window and expand **TRANSACTIONS** by clicking on the **small arrow** and then click on **Number Format** and click on **Number**.
 
-![](./images/500/Picture500-43.png)
+![](./images/500/6.png)
 
--   In the popped window, click on Add Another Match and select **STATION_ID** and **STATIONID** in **STATION_INFO** and **SSW_P_RES**. Finally, click **OK**.
+-   Scroll down again and change **Decimal** for **TRANSACTIONS** to be **None**.
 
-![](./images/500/Picture500-44.png)
+![](./images/500/7.png)
 
--   Repeat **Step 4** to create a connection between **SSW_V_RES** and **STATION_INFO** datasets. Finally the Data Diagram should look like this:
+-   Finally, drag the column **SALES** from the left to the **Color** box.
 
-![](./images/500/Picture500-45.png)
+![](./images/500/8.png)
 
+-   Congratulations! You have made a visualization in just minutes that can help provide insight into the sales and transactions of various different stores. Make sure to hit **Save** in the top right to save your project.
 
+-   The following are some examples of what kind of visualizations can be done.
 
-### **STEP 3: Create Desired Graphs**
+![](./images/500/9.png)
 
--   Go back to the **Visualize** tab in the project, add a new Canvas by clicking on the **+** icon.
-
-![](./images/500/Picture500-51.png)
-
--   Click on the triangle next to the Canvas name, select Rename and enter the desired name for the Canvas, e.g. **Validation (OML Model)**.
-
-![](./images/500/Picture500-52.png)
-
--   In the newly created Canvas, create a **Combo** chart. Use the following values to set up the chart:
-
-![](./images/500/Picture500-53.png)
-
--   **Values (Y-Axis):**  SSW_V_RES->Actual_Available_Bikes (bar)   and   SSW_V_RES->Predicted_Available_Bikes (line)
-
--   **Category (X-Axis):** SSW_V_RES->Last_Reported->Hour of Day
-
--    **Filters:** SSW_V_RES->Last_Reported (start: 8/28/17 – end: 8/29/17)   and   Station_Info->Station_Name (Avenue D & E 8 St)
-
-
--   Repeat the first two instructions in this step to create another Canvas- e.g. **Prediction (OML Model)**- to visualize the prediction results. Create a **Bar** chart in this canvas as below:
-
-![](./images/500/Picture500-54.png)
-
--   **Values (Y-Axis):**  SSW_P_RES->Predicted_Available_Bikes (bar)
-
--   **Category (X-Axis):** SSW_P_RES->Last_Reported->Hour of Day
-
--   **Filters:** SSW_P_RES->Last_Reported (start: 8/31/17 – end: 9/1/17)   and   Station_Info->Station_Name (Avenue D & E 8 St)
+![](./images/500/10.png)
 
 
 ## Great Work - All Done with Lab 500!
