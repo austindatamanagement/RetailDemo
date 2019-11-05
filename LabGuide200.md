@@ -32,35 +32,35 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 - Click the **Service Console** button on your Autonomous Data Warehouse details page.
 
-![](images/LabGuide100-2ba02578.png)
+![](./images/200/1.png)
 
 - Click the **Administration** tab and click **Manage Oracle ML Users** to go to the OML user management page.
 
-![](images/LabGuide100-18cd319d.png)
+![](./images/200/2.png)
 
 This will open a new tab within your browser that may ask you for a username and password.
 
 -   Enter **admin** as the username and use the password you specified when provisioning your ADW instance.
 
-![](./images/100/Picture700-4.png)
-
-**Note** that you do not have to go to this page using the same steps every time, you can bookmark this Oracle ML Notebook Admin URL and access it directly later.
+![](./images/200/3.png)
 
 -   Click **Create** button to create a new OML user. Note that this will also create a new database user with the same name. This newly created user will be able to use the OML notebook application. Note that you can also enter an email address to send an email confirmation to your user (*for this lab you can use your own personal email address*) when creating the user.
 
-![](./images/100/Picture700-5.png)
+![](./images/200/4.png)
 
--   Enter the required information for this user, name the user as **testuser**. If you supplied a valid **email address**, a welcome email should arrive within a few minutes to your Inbox. Note down your password. Click the **Create** button, in the top-right corner of the page, to create the user.
+-   Enter the required information for this user, name the user as **testuser**. If you supplied a valid **email address**, a welcome email should arrive within a few minutes to your Inbox. Remember your password if you choose to create it in this step. If you do not create it in this step, the user will receive an email and will be able to create a new password through there.  Click the **Create** button, in the top-right corner of the page, to create the user.
 
-![](./images/100/Picture700-7.png)
-
--   Below is the email which each user receives welcoming them to the OML application. It includes a direct link to the OML application for that user which they can bookmark.
-
-![](./images/100/Picture700-8.png)
+![](./images/200/5.png)
 
 -   After you click **Create** you will see that user listed in the Users section.
 
-![](./images/100/Picture700-10.png)
+![](./images/200/7.png)
+
+-   Below is the email which each new user receives welcoming them to the OML application. It includes a direct link to the OML application for that user which they can bookmark.  If you didn't already create a password for your user in the step above, click on the **Access Oracle ML SQL notebook** button in the email, and you will be taken to the site where you can create a password for your new user account.
+
+![](./images/200/6.png)
+
+![](./images/200/7a.png)
 
 You will use this user later in this workshop.
 
@@ -74,23 +74,23 @@ As ADW only accepts secure connections to the database, you need to download a w
 
 -   Go back to the Cloud Console and open the Instances screen. Find your database, click the action menu and select **DB Connection**.
 
-![](./images/200/Picture200-34.jpeg)
+![](./images/200/8.png)
 
 -   Under Download a Connection Wallet, click **Download**.
 
-![](./images/200/Picture200-15.jpg)
+![](./images/200/9.png)
 
 -   Specify a password of your choice for the wallet. You will need this password when connecting to the database via SQL Developer later, and is also used as the JKS keystore password for JDBC applications that use JKS for security. Click **Download** to download the wallet file to your client machine. Download the wallet to a location you can easily access, because we will be using it in the next step.
 *Note: If you are prevented from downloading your Connection Wallet, it may be due to your browser's pop-blocker. Please disable it or create an exception for Oracle Cloud domains.*
 
-![](./images/200/Picture200-16.jpg)
+![](./images/200/10.png)
 
 ### **STEP 2: Connect to the database using SQL Developer**
 Start SQL Developer and create a connection for your database using the default administrator account 'ADMIN' by following these steps. You will grant the testuser username specific privileges.
 
 -   Click the **New Connection** icon in the Connections toolbox on the top left of the SQL Developer homepage.
 
-![](./images/200/snap0014653.jpg)
+![](./images/200/11.png)
 
 -   Fill in the connection details as below:
 
@@ -107,13 +107,17 @@ Start SQL Developer and create a connection for your database using the default 
 -   **Service:** There are 3 pre-configured database services for each database. Pick **adwretail_low** for this lab. For
 example, the database you created was named adwretail, select adwretail_low as the service.
 
-*Note* : SQL Developer versions prior to 18.3 ask for a **Keystore Password.** Here, you would enter the password you specified when downloading the wallet from ADW.
+*Note : SQL Developer versions prior to 18.3 ask for a **Keystore Password.** Here, you would enter the password you specified when downloading the wallet from ADW.*
 
-![](./images/200/Picture200-18.jpg)
+![](./images/200/12.png)
 
 -   Test your connection by clicking the **Test** button, if it succeeds save your connection information by clicking **Save**, then connect to your database by clicking the **Connect** button. An entry for the new connection appears under Connections.
 
--   If you are behind a VPN or Firewall and this Test fails, make sure you have <a href="https://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html" target="\_blank">SQL Developer 18.3</a> or higher. This version and above will allow you to select the "Use HTTP Proxy Host" option for a Cloud Wallet type connection. While creating your new ADW connection here, provide your proxy's Host and Port. If you are unsure where to find this, you may look at your computer's connection settings or contact your Network Administrator.
+![](./images/200/13.png)
+
+![](./images/200/14.png)
+
+-   *Note: If you are behind a VPN or Firewall and this Test fails, make sure you have <a href="https://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html" target="\_blank">SQL Developer 18.3</a> or higher. This version and above will allow you to select the "Use HTTP Proxy Host" option for a Cloud Wallet type connection. While creating your new ADW connection here, provide your proxy's Host and Port. If you are unsure where to find this, you may look at your computer's connection settings or contact your Network Administrator.*
 
 
 ### **STEP 3: Grant Privileges to the OML User to Access Datasets**
@@ -121,17 +125,19 @@ In order to avoid running into an access error when you run the code in OML, gra
 
 -   Under your connection in the SQL Developer, expand the hierarchy tree and search for **Other Users**. Expand it and find your OML user you created labeled **testuser**.
 
--   Right click the user and select **Edit User...**.
+![](./images/200/15.png)
 
-![](./images/200/Picture200-41.png)
+-   Right click the user and select **Edit User...**.
 
 -   In the popped up screen, navigate to **System Privileges** and click the checkboxes under the **Admin Option** column for the following Privileges: **ALTER ANY TABLE**, **CREATE ANY TABLE**, **CREATE TABLE**, **DELETE ANY TABLE**, **DROP ANY TABLE**, **INSERT ANY TABLE**, **READ ANY TABLE**, **SELECT ANY TABLE**, **UNDER ANY TABLE**, **UPDATE ANY TABLE**.
 
+![](./images/200/16.png)
+
 -   Once they have all been selected, click **Apply**. After a few moments, click anywhere again and a Successful pop up window should show up. Click **OK**.
 
--   This will grant the necessary privileges for the OML user **testuser** to run the future prediction model OML script.
+![](./images/200/17.png)
 
-![](./images/200/Picture200-42.png)
+-   This will grant the necessary privileges for the OML user **testuser** to run the future prediction model OML script.
 
 
 ## Part 3. Use OML to Run a Machine Learning Script and Generate a Model
@@ -140,13 +146,23 @@ In order to avoid running into an access error when you run the code in OML, gra
 
 -   Navigate to and click on **Oracle ML SQL Notebooks** from the development page of your ADW instance service console.
 
+![](./images/200/18.png)
+
 -   Sign in as **testuser** with the appropriate password.
+
+![](./images/200/19.png)
 
 -   Click on **Notebooks** under the **Quick Actions** section.
 
+![](./images/200/20.png)
+
 -   Click **Import** and select **ML Prediction Models.json** from the **files** folder for this lab.
 
+![](./images/200/21.png)
+
 -   After the successful import message pops up, click on the notebook.
+
+![](./images/200/22.png)
 
 ### **STEP 2: Run the OML script**
 -   OML notebooks are structured with Paragraph sections that consist of markdown and SQL code. The paragraphs can be run one by one or all together.
@@ -155,7 +171,11 @@ In order to avoid running into an access error when you run the code in OML, gra
 
 -   Click **Save** to bind the connection to the OML interpreter.
 
+![](./images/200/23.png)
+
 -   Then, click on the **Run all paragraphs** button.
+
+![](./images/200/24.png)
 
 -   You have just ran a prediction model using OML through a SQL script.
 
@@ -166,14 +186,21 @@ In order to avoid running into an access error when you run the code in OML, gra
 
 -   Navigate to and click on **Oracle APEX** from the development page of your ADW instance service console.
 
+![](./images/200/26.png)
+
 -   Sign in as **developer** to the **developer** workspace with the appropriate browser.
+
+![](./images/200/27.png)
 
 ### **STEP 2: Access the New OML Generated Tables**
 
 -   Click on **SQL Workshop** and then on **Object Browser** to view the tables of your Autonomous Data Warehouse.
 
--   Note the new tables that have been added through the OML script by the OML user you made and then gave privileges to.
+![](./images/200/28.png)
 
+-   Notice the new tables that have been added through the OML script run by the OML user you made and gave privileges to.
+
+![](./images/200/29.png)
 
 ## Great Work - All Done with Lab 200!
 **You are ready to move on to the next lab. You may now close this tab.*
