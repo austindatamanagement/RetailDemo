@@ -31,7 +31,7 @@ This lab walks you through the steps on how you can use the Oracle Analytics Clo
 
 ![](./images/500/0.png)
 
--   Then, find **Master_Table** and click on it's hamburger menu. From there, click on **Create Project**. This will make a new project based on the dataset.
+-   Then, find **Master_Table** and click on it's hamburger menu on the far right. From there, click on **Create Project**. This will make a new project based on the dataset.
 
 ![](./images/500/1.png)
 
@@ -42,7 +42,7 @@ This lab walks you through the steps on how you can use the Oracle Analytics Clo
 
 ![](./images/500/2.png)
 
--   Select these three columns (**STORE_ADDRESS**, **TRANSACTIONS**, **SALES**) together from the dropdown by holding down either ctrl (Windows/Linux) or command (Mac) depending on your operating system. Once all three are selected together, right click and select **Pick Visualization...**.
+-   Select these three columns **STORE_ADDRESS**, **TRANSACTIONS**, **SALES** together from the dropdown by holding down either ctrl (Windows/Linux) or command (MacOS) depending on your operating system. Once all three are selected together, right click and select **Pick Visualization...**.
 
 ![](./images/500/3.png)
 
@@ -68,7 +68,7 @@ This lab walks you through the steps on how you can use the Oracle Analytics Clo
 
 -   Congratulations! You have made a visualization in just minutes that can help provide insight into the sales and transactions of various different stores. Make sure to hit **Save** in the top right to save your project.
 
--   The following are some examples of what kind of visualizations can be done.
+-   The following are some other examples of what kinds of visualizations can be done in Oracle Analytics Cloud.  In the second screen capture, you can see how the machine learning data you created in this lab can be used to make prediction visualizations to give insight into future sales.
 
 ![](./images/500/9.png)
 
