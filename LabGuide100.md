@@ -133,65 +133,7 @@ In this section you will use Oracle Application Express (APEX) to create a works
 
 ![](./images/100/Part_2_Step_3_4.png)
 
-### **STEP 4: Create an App**
-
--   Before installing apps, you may be prompted to create an APEX account password. If so, continue to do so by clicking on **Set APEX Account Password**.
-
-![](./images/100/Part_2_Step_4_1.png)
-
--   To start creating an app, click on **App Builder**.
-
-![](./images/100/Part_2_Step_4_2.png)
-
--   Next, click on **Install Sample App**.
-
-![](./images/100/Part_2_Step_4_3.png)
-
--   A variety of sample apps will show up. Click on **Brookstrut Sample Application** for this lab. We will use this as our template for the app.
-
-![](./images/100/Part_2_Step_4_4.png)
-
--   Then, click on **Install App**.
-
-![](./images/100/Part_2_Step_4_5.png)
-
--   Continue by clicking on **Next**.
-
-![](./images/100/Part_2_Step_4_6.png)
-
--   Finally, click on **Install App** to create the app.
-
-![](./images/100/Part_2_Step_4_7.png)
-
--   After a few moments, the application should be installed.
-
-### **STEP 5: Test the App**
-
--   Let's beging to test the app. Click on **App Builder**.
-
--   Hover with your cursor over **Brookstrut Sample Application** and click on the **Run button**.
-
-![](./images/100/Part_2_Step_5_1.png)
-
--   Sign in to the app as DEVELOPER for the username and the DEVELOPER password you noted earlier.
-
--   Click on **Sign In**.
-
-![](./images/100/Part_2_Step_5_3.png)
-
--   You are now able to use your app that is connected to your Oracle Autonomous Data Warehouse (ADW) instance. Have a look at some of the navigation menu options. 
-
--   For example, click on **Stores**.
-
-![](./images/100/Part_2_Step_5_4.png)
-
--   Then, click on the store **All U Can Eat** for Store Details.
-
-![](./images/100/Part_2_Step_5_5.png)
-
--   Close the app from your browser when you are ready.
-
-### **STEP 6: Load Data through APEX**
+### **STEP 4: Load Data through APEX**
 
 -   Click on **SQL Workshop**.
 
@@ -230,6 +172,65 @@ In this section you will use Oracle Application Express (APEX) to create a works
 -   Confirm that the two data files you loaded have been imported as tables.
 
 ![](./images/100/Part_2_Step_6_17.png)
+
+
+### **STEP 5: Create an App in APEX**
+
+-   Before installing apps, you may be prompted to create an APEX account password. If so, continue to do so by clicking on **Set APEX Account Password**.
+
+![](./images/100/Part_2_Step_4_1.png)
+
+-   To start creating an app, click on **App Builder**.
+
+![](./images/100/Part_2_Step_4_2.png)
+
+-   Next, click on **Install Sample App**.
+
+![](./images/100/Part_2_Step_4_3.png)
+
+-   A variety of sample apps will show up. Click on **Brookstrut Sample Application** for this lab. We will use this as our template for the app.
+
+![](./images/100/Part_2_Step_4_4.png)
+
+-   Then, click on **Install App**.
+
+![](./images/100/Part_2_Step_4_5.png)
+
+-   Continue by clicking on **Next**.
+
+![](./images/100/Part_2_Step_4_6.png)
+
+-   Finally, click on **Install App** to create the app.
+
+![](./images/100/Part_2_Step_4_7.png)
+
+-   After a few moments, the application should be installed.
+
+### **STEP 6: Test the App**
+
+-   Let's beging to test the app. Click on **App Builder**.
+
+-   Hover with your cursor over **Brookstrut Sample Application** and click on the **Run button**.
+
+![](./images/100/Part_2_Step_5_1.png)
+
+-   Sign in to the app as DEVELOPER for the username and the DEVELOPER password you noted earlier.
+
+-   Click on **Sign In**.
+
+![](./images/100/Part_2_Step_5_3.png)
+
+-   You are now able to use your app that is connected to your Oracle Autonomous Data Warehouse (ADW) instance. Have a look at some of the navigation menu options. 
+
+-   For example, click on **Stores**.
+
+![](./images/100/Part_2_Step_5_4.png)
+
+-   Then, click on the store **All U Can Eat** for Store Details.
+
+![](./images/100/Part_2_Step_5_5.png)
+
+-   Close the app from your browser when you are ready.
 
 
 ## Great Work - All Done with Lab 100!
