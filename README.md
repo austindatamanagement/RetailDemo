@@ -31,6 +31,4 @@ You will take on 2 Personas during the workshop. The **Data Scientist Persona** 
 
 ### Step 2: Navigate to Lab 100
 
-- You can see a list of Lab Guides by clicking on the Menu Icon in the upper left corner of the browser window. You are now ready to continue with Lab 100.
-
- ![](images/common/WorkshopMenu.png)
+- You are now able to start the lab! Navigate to the Lab 100 page to begin.
