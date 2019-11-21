@@ -55,7 +55,7 @@ In this section you will create an OAC instance.
 
 ![](./images/400/0f.png)
 
--   Welcome to the Oracle Analytic Cloud! Enjoy exploring it!
+-   Welcome to the Oracle Analytics Cloud! Enjoy exploring it!
 
 ![](./images/400/0g.png)
 
@@ -110,9 +110,9 @@ In this section you will create an OAC instance.
 
 ![](./images/400/3.png)
 
-### **STEP 2: Import the Training Datasets for the ML Model to OAC**
+### **STEP 2: Import the Datasets to OAC**
 
-Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_REGIONS**, **OOW_DEMO_ITEMS**, and **OOW_DEMO_SALES_HISTORY** tables prepared in the SQL Developer to our OAC instance. We need these tables for creating visualizations and for training the ML model in OAC. In the next steps, we show you how to import the **OOW_DEMO_STORES** table. You can repeat the same steps to import the other three tables.
+Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_REGIONS**, **OOW_DEMO_ITEMS**, and **OOW_DEMO_SALES_HISTORY** tables to OAC. In the next steps, we show you how to import the **OOW_DEMO_STORES** table. You can repeat the same steps to import the other three tables.
 
 -   Select the desired table (**OOW_DEMO_STORES** is the first one to import) from the list.
 
@@ -126,7 +126,7 @@ Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_REGIONS**, **OOW_DEMO_I
 
 ![](./images/400/6.png)
 
--   When the data set is loaded, change columns containing **ID** (such as **ID**, **PRODUCT_ID**, **STORE_ID**) from **Measure** type to **Attribute** type. In order to do so, click on the # sign next to the column name and select **Attribute** from the drop-down menu. Each data set will have a varying amount of columns containing **ID**. Make sure to check through all columns. The reason for changing the type is because we will not be performing any math operations on the IDs and hence we should treat the IDs as attributes.
+-   When the data set is loaded, change columns containing **ID** (such as **ID**, **REGION_ID**, **STORE_ID**, **PRODUCT_ID**, etc.) from **Measure** type to **Attribute** type. In order to do so, click on the # sign next to the column name and select **Attribute** from the drop-down menu. Each data set will have a varying amount of columns containing **ID**. Make sure to check through all columns. The reason for changing the type is because we will not be performing any math operations on the IDs and hence we should treat the IDs as attributes.
 
 ![](./images/400/7.png)
 
@@ -216,7 +216,7 @@ Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_REGIONS**, **OOW_DEMO_I
 
 ![](./images/400/25.png)
 
--   All the columns will be selected. Let's select some columns we want to remove from this list by holding the ctrl button and left clicking on the columns. Select the following: **IS_DEFAULT_YN**, **REGION_COLOR**, **REGION_ZOOM**, **ROW_VERSION_NUMBER**, **N1**, **N2**, **N3**, **N4**, **REGION_ID**, **ROW_VERSION_NUMBER_1**, **ID_2**, **CREATED_ON**, **DATE_OF_SALE**, **PRODUCT_ID**, **STORE_ID**, and **ROW_VERSION_NUMBER_2**.
+-   All the columns will be selected. Let's select some columns we want to remove from this list by holding the ctrl button(Windows) or the command button(MacOS) and left clicking on the columns. Select the following: **IS_DEFAULT_YN**, **REGION_COLOR**, **REGION_ZOOM**, **ROW_VERSION_NUMBER**, **N1**, **N2**, **N3**, **N4**, **REGION_ID**, **ROW_VERSION_NUMBER_1**, **ID_2**, **CREATED_ON**, **DATE_OF_SALE**, **PRODUCT_ID**, **STORE_ID**, and **ROW_VERSION_NUMBER_2**.
 
 -   Having selected all the above columns, click **Remove selected**.
 
@@ -272,8 +272,6 @@ Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_REGIONS**, **OOW_DEMO_I
 
 ![](./images/400/34.png)
 
-- **(TO BE PROOFREAD AFTER THIS POINT)**
-
 -  Click on the **Gray Circled Plus** icon to add more columns. In the **Name** box, input **Discount**.
 
 ![](./images/400/35.png)
@@ -301,8 +299,6 @@ Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_REGIONS**, **OOW_DEMO_I
 -  Click on the **Gray Circled Plus** icon to add more columns. In the **Name** box, input **TRANSACTIONS**.
 
 -   In the code calculation box, type in (without the quotes): "1"
-
--   Wait a few seconds as the search query goes through and then click on the **f(x) Log10** popup.
 
 ![](./images/400/39.png)
 
