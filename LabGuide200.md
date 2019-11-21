@@ -133,7 +133,9 @@ In order to avoid running into an access error when you run the code in OML, gra
 
 ![](./images/200/16.png)
 
--   Once they have all been selected, click **Apply**. After a few moments, click anywhere again and a Successful pop up window should show up. Click **OK**.
+-   Once they have all been selected, click **Apply**. 
+
+-   After a few moments, click anywhere again and a Successful pop up window should show up. Click **OK**.
 
 ![](./images/200/17.png)
 
