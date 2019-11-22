@@ -1,4 +1,4 @@
-# Visualizations in Oracle Analytics Cloud (OAC)
+# Lab 500 - Visualizations in Oracle Analytics Cloud (OAC)
 
 ![](images/500/Picture500-lab.png)  
 Updated: October 10, 2019

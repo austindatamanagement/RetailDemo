@@ -1,0 +1,54 @@
+{
+    "workshop": {
+        "title": "Retail Demo",
+        "description": "This workshop will walk you through the process of using the Autonomous Data Warehouse (ADW) to build and apply predictive Machine Learning models.",
+        "theme": "default",
+        "interactive":"https://launch.oracle.com/?",
+        "labs": [
+            {
+                "number": "0",
+                "filename": "README.md",
+                "title": "Workshop Introduction",
+                "description": "Step-by-step workshop instructions"
+
+            },
+            {
+                "number": "100",
+                "filename": "LabGuide100.md",
+                "title": "Lab 100 - Getting Started with Autonomous Data Warehouse (ADW) and Oracle Application Express (APEX)",
+                "description": "This lab walks you through the steps to get started using the Oracle Autonomous Data Warehouse (ADW) and Oracle Application Express (APEX) provided with your Autonomous Data Warehouse on Oracle Infrastructure Cloud (OCI). You will provision a new ADW instance as well as use APEX to create a workspace and user, load data, and create an app."
+
+            },
+            {
+                "number": "200",
+                "filename": "LabGuide200.md",
+                "title": "Lab 200 - Using OML to Run a Machine Learning Model and SQL Developer to Grant User Privileges",
+                "description": "This lab walks you through the steps to make an OML user and use SQL Developer as an interface to the ADW instance for granting user privileges. Then you will use OML to run a SQL script to generate machine learning models."
+
+            },
+            {
+                "number": "300",
+                "filename": "LabGuide300.md",
+                "title": "Lab 300 - Enabling Oracle Restful Data Services (ORDS) with APEX to Call and Create APIs",
+                "description": "This lab walks you through the steps to enabling Oracle Restful Data Services (ORDS) with APEX in order to call and create APIs."
+
+            },
+            {
+                "number": "400",
+                "filename": "LabGuide400.md",
+                "title": "Lab 400 - Getting Started with Oracle Analytics Cloud (OAC)",
+                "description": "This lab walks you through the steps to provision an Oracle Analytics Cloud (OAC) instance and connect it to your Autonomous Data Warehouse (ADW) instance."
+
+            },
+        {
+                "number": "500",
+                "filename": "LabGuide500.md",
+                "title": "Lab 500 - Visualizations in Oracle Analytics Cloud (OAC)",
+                "description": "This lab walks you through the steps on how you can use the Oracle Analytics Cloud to visualize entities from a database such as the results of the model created in OML."
+
+            }
+
+
+        ]
+    }
+}
