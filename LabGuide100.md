@@ -169,7 +169,7 @@ In this section you will use Oracle Application Express (APEX) to create a works
 
 -   Repeat the above components of STEP 6 for the **US_CENSUS.csv** data file under the **Lab Files** folder for this workshop.  When loading in this table, keep the table options for **US_CENSUS.csv** as shown below.
 
-![](./images/100/apex us census image.png)
+![](./images/100/Part_2_Step_6_18.png)
 
 -   Confirm that the two data files you loaded have been imported as tables.
 
