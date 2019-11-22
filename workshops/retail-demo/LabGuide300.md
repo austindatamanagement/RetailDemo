@@ -154,7 +154,7 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 -   Navigate again to the **WebPage** folder in your downloads.
 
--   To open the web page, right click on the **Layout.html** file, select **Open With**, and select the web browser of your choice (Google Chrome, Safari, Firefox, Internet Explorer supported).
+-   To open the web page, right click on the **Layout.html** file, select **Open With**, and select the web browser of your choice (Google Chrome and Safari supported).
 
 -   When the web page opens up, you can navigate to the **Select Store:** dropdown.  When you click on the dropdown, the list of stores is populated by the response data of your ‘stores’ REST API call using the URL you provided in the code from APEX.
 
