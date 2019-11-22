@@ -155,7 +155,7 @@ In this section you will use Oracle Application Express (APEX) to create a works
 
 ![](./images/100/Part_2_Step_6_5.png)
 
--   A preview will pop up where you can view some details about the data you are loading. Proceed by entering in a **Table Name**. For this lab, use **TRANSACTION_HISTORY** for the table name. The Error Table Name will be constructed automatically.
+-   A preview will pop up where you can view some details about the data you are loading. Proceed by entering in a **Table Name**. For this lab, use **TRANSACTION_HISTORY** for the table name. The Error Table Name will be constructed automatically.  For primary keys, leave the **Identity Column** option selected.
 
 ![](./images/100/Part_2_Step_6_6.png)
 
@@ -167,7 +167,9 @@ In this section you will use Oracle Application Express (APEX) to create a works
 
 ![](./images/100/Part_2_Step_6_9.png)
 
--   Repeat the above components of STEP 6 for the **US_CENSUS.csv** data file under the **Lab Files** folder for this workshop.
+-   Repeat the above components of STEP 6 for the **US_CENSUS.csv** data file under the **Lab Files** folder for this workshop.  When loading in this table, keep the table options for **US_CENSUS.csv** as shown below.
+
+![](./images/100/apex us census image.png)
 
 -   Confirm that the two data files you loaded have been imported as tables.
 
@@ -175,10 +177,6 @@ In this section you will use Oracle Application Express (APEX) to create a works
 
 
 ### **STEP 5: Create an App in APEX**
-
--   Before installing apps, you may be prompted to create an APEX account password. If so, continue to do so by clicking on **Set APEX Account Password**.
-
-![](./images/100/Part_2_Step_4_1.png)
 
 -   To start creating an app, click on **App Builder**.
 
