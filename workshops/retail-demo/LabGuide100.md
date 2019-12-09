@@ -22,12 +22,11 @@ This lab walks you through the steps to get started using the Oracle Autonomous 
 
 # Provision Autonomous Data Warehouse (ADW) and Create an App in Oracle Application Express (APEX)
 
+In this section you will be provisioning an ADW instance using the cloud console. Then, you will use Oracle Application Express (APEX) to create a workspace with users, create an app, and load data to the app.
+
 ## Part 1. Provisioning an ADW Instance
 
-In this section you will be provisioning an ADW instance using the cloud console.
-
-
-### **STEP 1: Sign in to Oracle Cloud**
+### **STEP 1**: Sign in to Oracle Cloud
 
 -   Go to [cloud.oracle.com](https://cloud.oracle.com), click on the **Person Icon** 
 
@@ -45,7 +44,7 @@ In this section you will be provisioning an ADW instance using the cloud console
 
 ![](./images/100/Part_1_Step_1_6.png)
 
-### **STEP 2: Create an ADW Instance**
+### **STEP 2**: Create an ADW Instance
 
 -   Once you are logged in, you are taken to the OCI Console. Click **Create a data warehouse**
 
@@ -81,9 +80,7 @@ In this section you will be provisioning an ADW instance using the cloud console
 
 ## Part 2. Creating an App with APEX
 
-In this section you will use Oracle Application Express (APEX) to create a workspace with users, create an app, and load data to the app.
-
-### **STEP 1: Access APEX**
+### **STEP 1**: Access APEX
 
 -   From the Autonomous Data Warehouse instance details page, click on **Service Console**.
 
@@ -101,7 +98,7 @@ In this section you will use Oracle Application Express (APEX) to create a works
 
 ![](./images/100/Part_2_Step_1_4.png)
 
-### **STEP 2: Create a Workspace and User**
+### **STEP 2**: Create a Workspace and User
 
 -   You will now be on the Welcome page. Click **Create Workspace**.
 
@@ -115,7 +112,7 @@ In this section you will use Oracle Application Express (APEX) to create a works
 
 ![](./images/100/Part_2_Step_2_2.png)
 
-### **STEP 3: Sign in as the New User**
+### **STEP 3**: Sign in as the New User
 
 -   After your Workspace is created, sign out of ADMIN by clicking **ADMIN**.
 
@@ -133,7 +130,7 @@ In this section you will use Oracle Application Express (APEX) to create a works
 
 ![](./images/100/Part_2_Step_3_4.png)
 
-### **STEP 4: Load Data through APEX**
+### **STEP 4**: Load Data through APEX
 
 -   Click on **SQL Workshop**.
 
@@ -176,7 +173,7 @@ In this section you will use Oracle Application Express (APEX) to create a works
 ![](./images/100/Part_2_Step_6_17.png)
 
 
-### **STEP 5: Create an App in APEX**
+### **STEP 5**: Create an App in APEX
 
 -   To start creating an app, click on **App Builder**.
 
@@ -204,7 +201,7 @@ In this section you will use Oracle Application Express (APEX) to create a works
 
 -   After a few moments, the application should be installed.
 
-### **STEP 6: Test the App**
+### **STEP 6**: Test the App
 
 -   Let's beging to test the app. Click on **App Builder**.
 

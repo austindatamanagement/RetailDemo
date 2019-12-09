@@ -18,14 +18,11 @@ This lab walks you through the steps on how you can use the Oracle Analytics Clo
 -   The following lab requires an Oracle Public Cloud account. You may use your own cloud account, a cloud account that you obtained through a trial, or a training account whose details were given to you by an Oracle instructor.
 
 
-
 # Visualizations in Oracle Analytics Cloud (OAC)
-
-
 
 ## Part 1. Visualize results in OAC
 
-### **STEP 1: Create a Project**
+### **STEP 1**: Create a Project
 
 -   From Oracle Analytics Cloud, click on the hamburger menu icon and click on **Data**. 
 
@@ -36,7 +33,7 @@ This lab walks you through the steps on how you can use the Oracle Analytics Clo
 ![](./images/500/1.png)
 
 
-### **STEP 2: Create a Visualization**
+### **STEP 2**: Create a Visualization
 
 -   If you don't see all the columns, expand **Master_Table** on the left with the **small arrow** in order to see all the columns in the data set.
 

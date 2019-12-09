@@ -18,14 +18,11 @@ This lab walks you through the steps to provision an Oracle Analytics Cloud (OAC
 -   The following lab requires an Oracle Public Cloud account. You may use your own cloud account, a cloud account that you obtained through a trial, or a training account whose details were given to you by an Oracle instructor.
 
 
-
 # Provision Oracle Analytics Cloud (OAC) and Connect to Autonomous Data Warehouse (ADW)
 
 ## Part 1. Create an OAC Instance
-In this section you will create an OAC instance.
 
-
-### **STEP 1: Create an OAC Instance**
+### **STEP 1**: Create an OAC Instance
 
 -   Sign in to cloud.oracle.com with your account credentials as done in the previous labs.
 
@@ -62,7 +59,7 @@ In this section you will create an OAC instance.
 
 ## Part 2. Connect OAC to ADW
 
-### **STEP 1: Connect OAC to ADW**
+### **STEP 1**: Connect OAC to ADW
 
 -   In the Oracle Analytics Cloud Homepage, click on the **Create** button on the top-right and then click on **Connection** in the popped menu.
 
@@ -93,10 +90,9 @@ In this section you will create an OAC instance.
 ![](./images/400/0k.png)
 
 
-
 ## Part 3. Import Datasets from ADW to OAC
 
-### **STEP 1: Configure a Database Connection**
+### **STEP 1**: Configure a Database Connection
 
 -   In the Oracle Analytics Cloud Homepage, click on the **Create** button on the top-right and then click on **Data Set** in the popped menu.
 
@@ -110,7 +106,7 @@ In this section you will create an OAC instance.
 
 ![](./images/400/3.png)
 
-### **STEP 2: Import the Datasets to OAC**
+### **STEP 2**: Import the Datasets to OAC
 
 Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_REGIONS**, **OOW_DEMO_ITEMS**, and **OOW_DEMO_SALES_HISTORY** tables to OAC. In the next steps, we show you how to import the **OOW_DEMO_STORES** table. You can repeat the same steps to import the other three tables.
 
@@ -136,7 +132,7 @@ Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_REGIONS**, **OOW_DEMO_I
 
 -   You are done with adding the first table. 
 
-### **STEP 3: Add Additional Datasets**
+### **STEP 3**: Add Additional Datasets
 
 -   Repeat "Part 3 STEP 1" and "Part 3 STEP 2" for the remaining 3 tables mentioned above (**OOW_DEMO_REGIONS**, **OOW_DEMO_ITEMS**, and **OOW_DEMO_SALES_HISTORY** tables ).
 
@@ -150,7 +146,7 @@ Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_REGIONS**, **OOW_DEMO_I
 
 ## Part 4. Create a Data Flow
 
-### **STEP 1: Add and Join the Datasets**
+### **STEP 1**: Add and Join the Datasets
 
 -   First, navigate back to the Oracle Analytics Cloud home page. Once you are back on the home page, click on **Create**, then on **Data Flow** to create a new data flow. 
 
@@ -210,7 +206,7 @@ Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_REGIONS**, **OOW_DEMO_I
 
 -   Now the 4 Data Sets have been joined.
 
-### **STEP 2: Select Columns**
+### **STEP 2**: Select Columns
 
 -   Since we are done adding the Join steps, click on the **Circled Plus** button again and then on **Select Columns** to help finalize the columns we want to keep.
 
@@ -224,7 +220,7 @@ Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_REGIONS**, **OOW_DEMO_I
 
 -   We are done with selecting our columns. 
 
-### **STEP 3: Rename Columns**
+### **STEP 3**: Rename Columns
 
 -   Let's rename some columns. Click on the **Circled Plus** button again and then on **Rename Columns** to help finalize the columns we want.
 
@@ -242,7 +238,7 @@ Now we should import the **OOW_DEMO_STORES**, **OOW_DEMO_REGIONS**, **OOW_DEMO_I
 
 -   We are done renaming columns. 
 
-### **STEP 2: Add Columns**
+### **STEP 2**: Add Columns
 
 -   Let's finish constructing our master table by adding columns. Do this by clicking on the **Circled Plus** button again and then on **Add Columns** to help finalize the columns.
 

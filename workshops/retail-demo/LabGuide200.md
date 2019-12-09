@@ -25,10 +25,11 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 # Using OML to Run a Machine Learning Model and SQL Developer to Grant User Privileges
 
+In this section, you will create an OML user and then connect the SQL Developer to the ADW instance that you provisioned in Lab 100 and grant your OML user priveleges to make changes to the ADW database.
+
 ## Part 1. Creating an OML User
 
-
-### **STEP 1: Creating OML Users**
+### **STEP 1**: Creating OML Users
 
 - Click the **Service Console** button on your Autonomous Data Warehouse details page.
 
@@ -66,10 +67,8 @@ You will use this user later in this workshop.
 
 
 ## Part 2. Connect SQL Developer to the ADW Instance and Grant Privileges to OML Users 
-In this section you will connect the SQL Developer to the ADW instance that you provisioned in Lab 100 and grant your OML user priveleges to make changes to the ADW database.
 
-
-### **STEP 1: Download the Connection Wallet**
+### **STEP 1**: Download the Connection Wallet
 As ADW only accepts secure connections to the database, you need to download a wallet file containing your credentials first. The wallet can be downloaded either from the instance's details page, or from the ADW service console. In this case, we will be showing you how to download the wallet file from the instance's details page.
 
 -   Go back to the Cloud Console and open the Instances screen. Find your database, click the action menu and select **DB Connection**.
@@ -85,7 +84,7 @@ As ADW only accepts secure connections to the database, you need to download a w
 
 ![](./images/200/10.png)
 
-### **STEP 2: Connect to the database using SQL Developer**
+### **STEP 2**: Connect to the database using SQL Developer
 Start SQL Developer and create a connection for your database using the default administrator account 'ADMIN' by following these steps. You will grant the testuser username specific privileges.
 
 -   Click the **New Connection** icon in the Connections toolbox on the top left of the SQL Developer homepage.
@@ -120,7 +119,7 @@ example, the database you created was named adwretail, select adwretail_low as t
 -   *Note: If you are behind a VPN or Firewall and this Test fails, make sure you have <a href="https://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html" target="\_blank">SQL Developer 18.3</a> or higher. This version and above will allow you to select the "Use HTTP Proxy Host" option for a Cloud Wallet type connection. While creating your new ADW connection here, provide your proxy's Host and Port. If you are unsure where to find this, you may look at your computer's connection settings or contact your Network Administrator.*
 
 
-### **STEP 3: Grant Privileges to the OML User to Access Datasets**
+### **STEP 3**: Grant Privileges to the OML User to Access Datasets
 In order to avoid running into an access error when you run the code in OML, grant all privleges to the OML user for the tables you created in the database.
 
 -   Under your connection in the SQL Developer, expand the hierarchy tree and search for **Other Users**. Expand it and find your OML user you created labeled **testuser**.
@@ -144,7 +143,7 @@ In order to avoid running into an access error when you run the code in OML, gra
 
 ## Part 3. Use OML to Run a Machine Learning Script and Generate a Model
 
-### **STEP 1: Import an OML script**
+### **STEP 1**: Import an OML script
 
 -   Navigate to and click on **Oracle ML SQL Notebooks** from the development page of your ADW instance service console.
 
@@ -166,7 +165,7 @@ In order to avoid running into an access error when you run the code in OML, gra
 
 ![](./images/200/22.png)
 
-### **STEP 2: Run the OML script**
+### **STEP 2**: Run the OML script
 -   OML notebooks are structured with Paragraph sections that consist of markdown and SQL code. The paragraphs can be run one by one or all together.
 
 -   In order for the notebook to communicate with the database, an interpreter binding must be set for the database connection. Click on the **Gear** interpreter binding button and click on **adwretail_low**. To run this script, a low concurrency option is preferred to avoid script errrors.
@@ -184,7 +183,7 @@ In order to avoid running into an access error when you run the code in OML, gra
 
 ## Part 4. Use APEX to See the New OML Generated Tables
 
-### **STEP 1: Access Your APEX App**
+### **STEP 1**: Access Your APEX App
 
 -   Navigate to and click on **Oracle APEX** from the development page of your ADW instance service console.
 
@@ -194,7 +193,7 @@ In order to avoid running into an access error when you run the code in OML, gra
 
 ![](./images/200/27.png)
 
-### **STEP 2: Access the New OML Generated Tables**
+### **STEP 2**: Access the New OML Generated Tables
 
 -   Click on **SQL Workshop** and then on **Object Browser** to view the tables of your Autonomous Data Warehouse.
 

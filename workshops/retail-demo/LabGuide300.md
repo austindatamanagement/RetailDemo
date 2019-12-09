@@ -26,7 +26,7 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 ## Part 1. Enable ORDS
 
-### **STEP 1: Access Your APEX App**
+### **STEP 1**: Access Your APEX App
 
 -   Navigate to and click on **Oracle APEX** from the development page of your ADW instance service console.
 
@@ -36,7 +36,7 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 ![](./images/300/4.png)
 
-### **STEP 2: Enable Oracle Restful Data Services (ORDS)**
+### **STEP 2**: Enable Oracle Restful Data Services (ORDS)
 
 -   Click on **SQL Workshop** and then on **RESTful Services**.
 
@@ -52,8 +52,7 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 ## Part 2. Import and Create APIs
 
-
-### **STEP 1: Import APIs**
+### **STEP 1**: Import APIs
 
 -   Click on **Import**. 
 
@@ -74,7 +73,7 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 ![](./images/300/10.png)
 
 
-### **STEP 2: Create APIs**
+### **STEP 2**: Create APIs
 
 -   Click on **salesAPI** to show the API template list.
 
@@ -102,7 +101,7 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 ![](./images/300/14.png)
 
-### **STEP 3: Check and Test APIS**
+### **STEP 3**: Check and Test APIS
 
 -   You have now imported and created various RESTful APIs with APEX. 
 
@@ -122,7 +121,7 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 ## Part 3. Use HTML Web Page to Consume APIs
 
-### **STEP 1: Copy API URLs**
+### **STEP 1**: Copy API URLs
 
 -   Under **salesAPI**, click on the **stores** API and copy the **Full URL** and paste it into a separate notes file(i.e. Notepad, Microsoft Word, Apple Notes, etc.) to be used later.
 
@@ -132,7 +131,7 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 ![](./images/300/20.png)
 
-### **STEP 2: Add API URLs to Web Page Code**
+### **STEP 2**: Add API URLs to Web Page Code
 
 -   Download the **WebPage.zip** file from the **files** folder in this lab.
 
@@ -148,7 +147,7 @@ Please use SQL Developer version 18.3 or later as this version contains enhancem
 
 -   Once you have replaced the two URLs, you must resave the file. (Note: Make sure that you keep the .js file type when you save the file in your text editor. Also, be sure that when you are saving the updated file, you are replacing the original file in the **WebPage** folder.)
 
-### **STEP 3: Test API Calls on Web Page**
+### **STEP 3**: Test API Calls on Web Page
 
 -   You have now implemented your API URLs from APEX into the code for the HTML Web Page, so your APIs are ready to be consumed!
 
