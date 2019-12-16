@@ -172,6 +172,20 @@ In this section you will be provisioning an ADW instance using the cloud console
 
 ![](./images/100/Part_2_Step_6_17.png)
 
+-   Now that the data has been loaded in, we have to make a minor change to one of the columns' data type.  With the  **TRANSACTION_HISTORY** table selected, click on **Modify Column**.
+
+![](./images/100/Part_2_Step_6_19.png)
+
+-   We want to modify the data type for the Date of Sale column.  To do this, select **DATE_OF_SALE (DATE)** from the **Column** dropdown.  Next, select **TIMESTAMP** from the **Datatype** dropdown.  Once you have made these selections, you can click **Next**.
+
+![](./images/100/Part_2_Step_6_20.png)
+
+-   The next screen asks you to confirm your column modification request.  To confirm, click **Finish**.
+
+![](./images/100/Part_2_Step_6_21.png)
+
+You have now changed the data type for the Date of Sale column from a Date to a Timestamp.  When the data was loaded into APEX, this column was automatically configured as a Date data type, only including the calendar date of the sale.  When we switch this column to a Timestamp data type, we not only get the calendar date of the sale, but also the time of day that the same occurred. This will come into play when we run our Machine Learning models in Lab 200.
+
 
 ### **STEP 5**: Create an App in APEX
 
