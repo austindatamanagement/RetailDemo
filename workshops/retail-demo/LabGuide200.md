@@ -178,7 +178,7 @@ In order to avoid running into an access error when you run the code in OML, gra
 
 ![](./images/200/24v2.png)
 
--   *Note: you can also select the "Run all Paragraphs" button at the top of the screen, highlighted in the image above.  This can sometimes cause errors, so it is better to run each script individually as mentioned above, but let it be known that running all paragraphs at once is an alternate option.*
+-   *Note: you can also select the "Run all Paragraphs" button at the top of the screen, highlighted in the image below.  This can sometimes cause errors, so it is better to run each script individually as mentioned above, but let it be known that running all paragraphs at once is an alternate option.*
 
 -   You have just ran a prediction model using OML through a SQL script.
 
