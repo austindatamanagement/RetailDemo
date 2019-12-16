@@ -174,9 +174,11 @@ In order to avoid running into an access error when you run the code in OML, gra
 
 ![](./images/200/23.png)
 
--   Then, click on the **Run all paragraphs** button.
+-   Now we have to run the scripts in the ML Notebook.  It is recommended that you run each of the notebooks separately.  To do so, click the **Run** button on the top right of each script, outlined in red in the image below.  You must do this for each script in the notebook.  Do not run the next script until the script before it has finished running.  These must be done sequentially.  When the script has finished running, it will say **FINISHED** next to the "run" button.  If the run was unsuccessful, it will say **ERROR** next to the "run" button.  If this happens, try running the script again.  Make sure to run every script in the notebook.  Note: some notebooks may take longer to run than others.  In particular, the "Build the Store Prediction Model" script will likely take up to 20 minutes to run.  This is an important step in building the ML model, so be sure to be patient and wait until this script finishes running to move onto the next.  Additionally, if there is no "run" button next to a script, it does not need to be run.  Once all scripts have successfully finished running, you are ready to move on!
 
-![](./images/200/24.png)
+![](./images/200/24v2.png)
+
+-   *Note: you can also select the "Run all Paragraphs" button at the top of the screen, highlighted in the image above.  This can sometimes cause errors, so it is better to run each script individually as mentioned above, but let it be known that running all paragraphs at once is an alternate option.*
 
 -   You have just ran a prediction model using OML through a SQL script.
 
