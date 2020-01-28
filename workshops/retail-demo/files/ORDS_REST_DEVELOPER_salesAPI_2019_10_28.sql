@@ -6,9 +6,9 @@
 BEGIN
   ORDS.ENABLE_SCHEMA(
       p_enabled             => TRUE,
-      p_schema              => 'DEVELOPER',
+      p_schema              => 'APEX1',
       p_url_mapping_type    => 'BASE_PATH',
-      p_url_mapping_pattern => 'DEVELOPER',
+      p_url_mapping_pattern => 'APEX1',
       p_auto_rest_auth      => FALSE);
     
   ORDS.DEFINE_MODULE(
